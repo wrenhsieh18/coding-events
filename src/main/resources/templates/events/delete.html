@@ -10,8 +10,8 @@
         <th:block th:each = "event : ${events}">
             <div class = "form-group">
             <label>
-                <span th:text = "${event.getName()}"></span>
                 <input type = "checkbox" name = "eventIds" th:value = "${event.getId()}" class = "form-checkbox"/>
+                <span th:text = "${event.getName()}"></span>
             </label>
             </div>
         </th:block>
